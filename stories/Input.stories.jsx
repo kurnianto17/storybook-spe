@@ -24,10 +24,12 @@ Number.args = {
     label : "Ini Label Number",
     type  : "number",
     width: 100,
+    borderRadius: 10
 }
 
 Password.args = {
     label : "Ini Label Password",
     type  : "password",
     width: 100,
+    borderRadius: 40
 }

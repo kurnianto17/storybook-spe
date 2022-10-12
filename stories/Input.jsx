@@ -3,10 +3,11 @@
 import React from 'react';
 import styles from "./Input.module.css"
 import PropTypes from 'prop-types';
-export const InputModif = ({ label, width, fontColor,type="text" ,...props }) => {
+export const InputModif = ({ label, borderRadius , width, fontColor,type="text" ,...props }) => {
     
     const style = {
         color : fontColor,
+        borderRadius : `${borderRadius || 0}px`
     }
   
     return (
@@ -18,11 +19,11 @@ export const InputModif = ({ label, width, fontColor,type="text" ,...props }) =>
 };
 
 
-// InputModif.propTypes = {
-//     width: PropTypes.number,
-//     label: PropTypes.string,
-//     borderRadius : PropTypes.number,
-//     type: PropTypes.oneOf(["number","text","password"]),
-//     color: PropTypes.string
-//   };
+  InputModif.propTypes = {
+      width: PropTypes.number,
+      label: PropTypes.string,
+      type: PropTypes.oneOf(["number","text","password"]),
+      color: PropTypes.string,
+      borderRadius: PropTypes.number
+    };
 
